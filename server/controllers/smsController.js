@@ -9,7 +9,7 @@ export const sendSMS = async (req, res) => {
 
     const accountSid = process.env.TWILIO_ACCOUNT_SID;
     const authToken = process.env.TWILIO_AUTH_TOKEN;
-    const fromNumber = process.env.TWILIO_FROM || process.env.TWILIO_FROM_NUMBER;
+    const fromNumber = process.env.TWILIO_FROM;
 
     if (!accountSid || !authToken || !fromNumber) {
       return res.status(500).json({ message: "Twilio is not configured. Please set TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_FROM_NUMBER" });
