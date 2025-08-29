@@ -22,5 +22,7 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, 'src'),
     },
+    // Ensure only one copy of React is bundled to avoid "Invalid hook call"
+    dedupe: ['react', 'react-dom'],
   },
 })
