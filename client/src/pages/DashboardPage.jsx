@@ -1,4 +1,4 @@
-import { useAuth } from "../hooks/useAuth";
+import { useAuth } from "../hooks/UseAuth";
 import { useBilling } from "../hooks/useBilling";
 import { useVoiceRecognition } from "../hooks/useVoiceRecognition";
 import { handleVoiceCommand } from "../lib/ParseVoiceCommand";
